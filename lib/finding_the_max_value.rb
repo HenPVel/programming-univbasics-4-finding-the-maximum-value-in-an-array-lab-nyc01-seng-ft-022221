@@ -1,3 +1,4 @@
+require 'pry'
 def find_max_value(array)
   count=0
   first_value=array[0]
@@ -5,6 +6,7 @@ def find_max_value(array)
   while count < array.length do
     if array[count] > first_value
       new_value=array[count]
+      binding.pry
     end
     count+=1
   end
