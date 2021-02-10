@@ -4,7 +4,7 @@ def find_max_value(array)
   count=0
   new_value=array[0]
 
-  while count < array.length do
+  for i in 1..array.length do
     if array[count] > new_value
       new_value=array[count]
       binding.pry
